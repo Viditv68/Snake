@@ -59,7 +59,7 @@ int main()
     score = 0;
     srand(time(NULL));
 
-    food.genFooda();
+    food.genFood();
 
     char game_over = false;
 
