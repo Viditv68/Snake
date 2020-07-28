@@ -1,0 +1,8 @@
+﻿  Food.cpp
+  Snake.cpp
+F:\Outscal Assignments\Snake\Snake\Snake\Snake.cpp(31,21): warning C4018: '>': signed/unsigned mismatch
+  main.cpp
+F:\Outscal Assignments\Snake\Snake\Snake\main.cpp(40,35): warning C4018: '<': signed/unsigned mismatch
+F:\Outscal Assignments\Snake\Snake\Snake\main.cpp(60,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Snake.vcxproj -> F:\Outscal Assignments\Snake\Snake\Debug\Snake.exe
