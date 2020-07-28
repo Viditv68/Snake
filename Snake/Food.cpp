@@ -6,4 +6,7 @@ void Food::genFood()
     pos.Y = (rand() % HEIGHT - 3) + 1;
 }
 
-COORD Food::getPos() { return pos; }
+COORD Food::getPos() 
+{ 
+    return pos; 
+}

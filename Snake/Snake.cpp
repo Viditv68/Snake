@@ -11,11 +11,24 @@ Snake::Snake(COORD pos, int vel)
     body.push_back(pos);
 }
 
-void Snake::direction(char dir) { this->dir = dir; }
-void Snake::grow() { len++; }
-COORD Snake::getPos() { return pos; }
+void Snake::direction(char dir) 
+{ 
+    this->dir = dir; 
+}
 
-vector<COORD> Snake::getBody() { return body; }
+void Snake::grow() 
+{ 
+    len++; 
+}
+COORD Snake::getPos() 
+{ 
+    return pos; 
+}
+
+vector<COORD> Snake::getBody() 
+{ 
+    return body; 
+}
 
 void Snake::moveSnake()
 {
@@ -28,7 +41,10 @@ void Snake::moveSnake()
     }
 
     body.push_back(pos);
-    if (body.size() > len) body.erase(body.begin());
+    if (body.size() > len)
+    {
+        body.erase(body.begin());
+    }
 }
 
 bool Snake::collided()
@@ -44,6 +60,8 @@ bool Snake::collided()
 
 bool Snake::eaten(COORD food)
 {
-    if (pos.X == food.X && pos.Y == food.Y) return true;
+    if (pos.X == food.X && pos.Y == food.Y) 
+        return true;
+   
     return false;
 }
